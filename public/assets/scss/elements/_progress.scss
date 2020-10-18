@@ -1,0 +1,200 @@
+/*==========================
+Progressbar Area 
+============================*/
+.rn-progress-bar{
+    .single-progress{
+        position: relative;
+        margin-top: 38px;
+        .title{
+            font-size: 15px;
+            color: $heading-color;
+            @extend %fontWeight500;
+            margin-bottom: 10px;
+        }
+        .progress{
+            height: 4px;
+            border-radius: 4px;
+            box-shadow: none;
+            background-color: #f5f7fd;
+            overflow: visible;
+            .progress-bar{
+                background-color: #56cfe1ff;
+                background-image: linear-gradient(-224deg,#56cfe1ff 0,#7400b8ff 100%);
+                position: relative;
+                color: #7400b8ff;
+            }
+        }
+
+        .label{
+            position: absolute;
+            right: 0;
+            top: 0;
+            @extend %fontWeight500;
+            color: $heading-color;
+            font-size: 15px;
+            @media #{$sm-layout} {
+                top: -8px;
+            }
+        }
+        
+        &.custom-color--1 {
+            .progress{
+                .progress-bar{
+                    color: rgb(86, 207, 225);
+                    background-color: rgb(83, 144, 217);
+                    background-image: linear-gradient(-224deg, rgb(83, 144, 217) 0px, rgb(86, 207, 225) 100%);
+                }
+            }
+        }
+
+        &.custom-color--2 {
+            .progress{
+                .progress-bar{
+                    color: rgb(83, 144, 217);
+                    background-color: rgb(105, 48, 195);
+                    background-image: linear-gradient(-224deg,  rgb(83, 144, 217) 0px, rgb(105, 48, 195) 100%);
+                }
+            }
+        }
+
+        &.custom-color--3 {
+            .progress{
+                .progress-bar{
+                    color: rgb(105, 48, 195);
+                    background-color: rgb(116, 0, 184);
+                    background-image: linear-gradient(-224deg, rgb(105, 48, 195) 0px, rgb(116, 0, 184) 100%);
+                }
+            }
+        }
+
+        &.custom-color--4 {
+            .progress{
+                .progress-bar{
+                    color: rgb(116, 0, 184);
+                    background-color: rgb(86, 207, 225);
+                    background-image: linear-gradient(-224deg, rgb(116, 0, 184) 0px, rgb(86, 207, 225) 100%);
+                }
+            }
+        }
+    }
+
+
+    &.progress-bar--2 {
+        .single-progress {
+            .progress {
+                height: 1px;
+                border-radius: 1px;
+            }
+        }
+    }
+
+    &.progress-bar--3 {
+        .single-progress {
+            .progress {
+                height: 20px;
+                border-radius: 0;
+            }
+        }
+    }
+
+    &.style-dots{
+        .single-progress{
+            .progress{
+                height: 32px;
+                border: 2px solid #f2f2f2;
+                padding: 4px;
+                border-radius: 30px;
+                box-shadow: none;
+                background: none;
+                overflow: visible;
+                .progress-bar{
+                    position: relative;
+                    top: auto;
+                    bottom: auto;
+                    left: auto;
+                    right: auto;
+                    background-color: transparent !important;
+                    background-size: 25px 25px;
+                    background-repeat: repeat-x;
+                    background-position: -3px center;
+                    background-image: radial-gradient(ellipse at center,#5945e6 50%,transparent 55%);
+
+                    &::before ,
+                    &::after{
+                        display: none;
+                    }
+                   
+                }
+            }
+        }
+    }
+
+    &.style-solid{
+        .single-progress{
+            .progress{
+                height: 32px;
+                padding: 6px;
+                border-radius: 30px;
+                box-shadow: none;
+                background-color: #f2f2f2;
+                .progress-bar{
+                    position: relative;
+                    top: auto;
+                    bottom: auto;
+                    left: auto;
+                    right: auto;
+                    border-radius: inherit;
+                    background-color: #56cfe1ff;
+                    background-image: linear-gradient(-224deg,#56cfe1ff 0,#7400b8ff 100%);
+                    &::before ,
+                    &::after{
+                        display: none;
+                    }
+                   
+                }
+            }
+
+            &.custom-color--1{
+                .progress{
+                    .progress-bar{
+                        color: rgb(86, 207, 225);
+                        background-color: rgb(83, 144, 217);
+                        background-image: linear-gradient(-224deg, rgb(83, 144, 217) 0px, rgb(86, 207, 225) 100%);
+                        }
+                }
+            }
+
+            &.custom-color--2 {
+                .progress{
+                    .progress-bar{
+                        color: rgb(83, 144, 217);
+                        background-color: rgb(105, 48, 195);
+                        background-image: linear-gradient(-224deg,  rgb(83, 144, 217) 0px, rgb(105, 48, 195) 100%);
+                        }
+                }
+            }
+
+            &.custom-color--3 {
+                .progress{
+                    .progress-bar{
+                        color: rgb(105, 48, 195);
+                        background-color: rgb(116, 0, 184);
+                        background-image: linear-gradient(-224deg, rgb(105, 48, 195) 0px, rgb(116, 0, 184) 100%);
+                        }
+                }
+            }
+
+            &.custom-color--4 {
+                .progress{
+                    .progress-bar{
+                        color: rgb(116, 0, 184);
+                        background-color: rgb(86, 207, 225);
+                        background-image: linear-gradient(-224deg, rgb(116, 0, 184) 0px, rgb(86, 207, 225) 100%);
+                        }
+                }
+            }
+
+
+        }
+    }
+}
