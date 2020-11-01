@@ -410,7 +410,7 @@ textarea:-ms-input-placeholder {
     [data-overlay="#{$i}"]:before,
     [data-black-overlay="#{$i}"]:before,
     [data-white-overlay="#{$i}"]:before {
-        opacity: #{$i * 0.10};
+        opacity: #{$i * 0.05};
     }
 }
 

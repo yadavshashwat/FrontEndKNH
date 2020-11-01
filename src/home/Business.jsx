@@ -20,27 +20,27 @@ const SlideList = [
         textPosition: 'text-left',
         bgImage: 'bg_image--17',
         category: '',
-        title: 'Grow business.',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
+        title: 'Our Care.',
+        description: "We understand the critical nature of medical care. We maintain a balance between what is safe and what is aspired.",
+        buttonText: 'Book an Appointment',
         buttonLink: '/contact'
     },
     {
         textPosition: 'text-left',
         bgImage: 'bg_image--18',
         category: '',
-        title: 'Development.',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
+        title: 'Our Doctors.',
+        description: 'The team of XX doctors with XX+ years of combined medical experience ensure that the best treatment is administered.',
+        buttonText: 'Book an Appointment',
         buttonLink: '/contact'
     },
     {
         textPosition: 'text-left',
         bgImage: 'bg_image--19',
         category: '',
-        title: 'Marketing.',
-        description: 'There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration.',
-        buttonText: 'Contact Us',
+        title: 'Our Facility.',
+        description: 'With our state of the art infrastructure, we ensure everything under the roof from diagnosis to treatment.',
+        buttonText: 'Book an Appointment',
         buttonLink: '/contact'
     }
 ]
