@@ -1,0 +1,61 @@
+/*--------------------------
+    Service Details Styles 
+-----------------------------*/
+
+// .header-area{
+//     .logo{
+//         height: 120px;        
+//     }
+// }
+.logo-knh-main{
+    height: 120px;
+    // width: 200px;
+}
+
+.admin-page {
+    display: table;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("https://hospitalmgmt-public.s3.ap-south-1.amazonaws.com/images/login_background_2.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: auto;
+
+    .login-box{
+        width: 400px;
+        height: 400px;
+        background-color: #ffffff;       
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        .field-div{
+            margin: 5px 20px;
+        }
+        .login-button{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+        .forget-password{
+            // padding: 5px;
+            margin-left: 20px;
+            .forget-password-message{
+                font-size: 15px;
+                padding: 15px 0px;
+                cursor: pointer;
+                &:hover{
+                    color:#0847A6;
+                }
+            }
+        }        
+    }
+
+}

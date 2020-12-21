@@ -4,35 +4,22 @@ class BrandTwo extends Component{
     render(){
         return(
             <React.Fragment>
-                <ul className="brand-style-2">
-                    <li>
-                        <img src="/assets/images/brand/brand-01.png" alt="Logo Images"/>
-                    </li>
-                    <li>
-                        <img src="/assets/images/brand/brand-02.png" alt="Logo Images"/>
-                    </li>
-                    <li>
-                        <img src="/assets/images/brand/brand-03.png" alt="Logo Images"/>
-                    </li>
-                    <li>
-                        <img src="/assets/images/brand/brand-04.png" alt="Logo Images"/>
-                    </li>
-                    <li>
-                        <img src="/assets/images/brand/brand-05.png" alt="Logo Images"/>
-                    </li>
-                    <li>
-                        <img src="/assets/images/brand/brand-06.png" alt="Logo Images"/>
-                    </li>
-                    <li>
-                        <img src="/assets/images/brand/brand-02.png" alt="Logo Images"/>
-                    </li>
-                    <li>
-                        <img src="/assets/images/brand/brand-03.png" alt="Logo Images"/>
-                    </li>
-                    <li>
-                        <img src="/assets/images/brand/brand-04.png" alt="Logo Images"/>
-                    </li>
-                </ul>
+                <div className="container">
+                    <div className="row">
+                        <div className="nabh-tab">
+                            <div className="col-lg-4">
+                                <div className="nabh-logo">
+                                    <img src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608579748/Logos/NABH_slzxay.png" alt="Logo Images"/>
+                                </div>                            
+                            </div>
+                            <div className="col-lg-8 nabh-text">
+                                <p>Proud to be Alwar's first NABH pre-acredited mother and child care dedicated hospital</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
             </React.Fragment>
         )
     }

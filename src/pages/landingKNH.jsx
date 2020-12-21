@@ -16,36 +16,37 @@ import { FiCheck, FiChevronUp } from "react-icons/fi";
 import Helmet from "../component/common/Helmet";
 
 const SlideList = [
+
     {
         textPosition: 'text-left',
-        bgImage: 'bg_image--17',
+        bgImage: 'image-team',
         category: '',
-        title: 'Our Care.',
-        description: "We understand the critical nature of medical care. We maintain a balance between what is safe and what is aspired.",
+        title: 'Our Team.',
+        description: 'The team of 10+ dedicated doctors with extensive medical expertise ensures that the best treatment is administered.',
         buttonText: 'Book an Appointment',
         buttonLink: '/contact'
     },
     {
         textPosition: 'text-left',
-        bgImage: 'bg_image--18',
-        category: '',
-        title: 'Our Doctors.',
-        description: 'The team of XX doctors with XX+ years of combined medical experience ensure that the best treatment is administered.',
-        buttonText: 'Book an Appointment',
-        buttonLink: '/contact'
-    },
-    {
-        textPosition: 'text-left',
-        bgImage: 'bg_image--19',
+        bgImage: 'image-facility',
         category: '',
         title: 'Our Facility.',
         description: 'With our state of the art infrastructure, we ensure everything under the roof from diagnosis to treatment.',
         buttonText: 'Book an Appointment',
         buttonLink: '/contact'
+    },
+    {
+        textPosition: 'text-left',
+        bgImage: 'image-care',
+        category: '',
+        title: 'Our Care.',
+        description: "We understand the critical nature of medical care. Patient's safety is paramount.",
+        buttonText: 'Book an Appointment',
+        buttonLink: '/contact'
     }
 ]
 
-class Business extends Component{
+class landingKNH extends Component{
     constructor () {
         super()
         this.state = {
@@ -119,8 +120,8 @@ class Business extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title service-style--3 text-center mb--30 mb_sm--0">
-                                    <h2 className="title">Our Service</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2 className="title">Our Services</h2>
+                                    <p>Our in house facilitie ensure that complete lifecycle of womanhood and associated needs are taken care off under one roof.</p>
                                 </div>
                             </div>
                         </div>
@@ -301,4 +302,4 @@ class Business extends Component{
         )
     }
 }
-export default Business;
+export default landingKNH;

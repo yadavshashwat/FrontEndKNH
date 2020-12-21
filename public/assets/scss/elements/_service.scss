@@ -91,7 +91,7 @@
             }
         }
         .icon {
-            font-size: 54px;
+            font-size: 70px;
             font-weight: 400;
             margin-bottom: 23px;
             display: inline-flex;
@@ -106,7 +106,13 @@
            svg {
                 stroke-width: 1 !important;
            }
+           img{
+            height: 70px;
+            filter: invert(72%) sepia(75%) saturate(391%) hue-rotate(146deg) brightness(94%) contrast(88%);
+           }
         }
+    
+
         .content {
             h3 {
                 &.title {
@@ -152,7 +158,11 @@
             }
             .icon{
                 color: #ffffff;
+                img{
+                    filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(169deg) brightness(108%) contrast(101%);
+                }
             }
+            
             .content{
                 h3 {
                     &.title{
