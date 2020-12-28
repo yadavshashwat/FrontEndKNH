@@ -11,6 +11,7 @@ import './index.scss';
 
 // Home layout
 import landingKNH from './pages/landingKNH';
+import gynaecologyPage from './pages/gynaecologyPage';
 import adminLogin from './pages/adminLogin';
 
 
@@ -30,6 +31,7 @@ class Root extends Component{
             <BrowserRouter basename={'/'}>
                 <Switch>
                     <Route exact path={`${process.env.PUBLIC_URL}/`} component={landingKNH}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/service/gynaecology`} component={gynaecologyPage}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/adminpanel`} component={adminLogin}/>
 
 

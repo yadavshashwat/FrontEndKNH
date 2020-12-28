@@ -1,36 +1,32 @@
 import React ,{ Component }from "react";
-import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+// import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
 
 const ServiceList = [
-    { 
-        icon: <img className="icon-departments" src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608584685/Icons/Icons-pregnancy_xapjto.png"></img>,
-        title: 'Gynaecology',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
     {
-        icon: <img className="icon-departments" src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608583383/Icons/Icon-uterus_b0rqds.png"></img>,
+        icon: <img className="icon-departments" alt="Obstretics" src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608583383/Icons/Icon-uterus_b0rqds.png"></img>,
         title: 'Obstretics',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <img className="icon-departments" src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608584685/Icons/Icons-neonatal_ntdqy2.png"></img>,
-        title: 'Neonatology and Pediatrics',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'Dealing with the specialized care of women health issues from menarche to menopause'
     },
     { 
-        icon: <img className="icon-departments" src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608584685/Icons/Icon-lab_jvvxkb.png"></img>,
-        title: 'Radiology and Laboratory',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <img className="icon-departments" alt="Gynaecology" src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608584685/Icons/Icons-pregnancy_xapjto.png"></img>,
+        title: 'Gynaecology',
+        description: 'Dealing with the specialized care of the mother during pregnancy and child birth'
     },
     {
-        icon: <img className="icon-departments" src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608584685/Icons/Icon-ivf_lhfrhi.png"></img>,        title: 'IVF Centre',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        icon: <img className="icon-departments" alt="Neonatology and Pediatrics"  src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608584685/Icons/Icons-neonatal_ntdqy2.png"></img>,
+        title: 'Neonatology and Pediatrics',
+        description: 'Dealing with the specialized care of the new born babies and children'
     },
-    // { 
-    //     icon: <FiMonitor />,
-    //     title: 'Mobile App Development',
-    //     description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    // }
+    {
+        icon: <img className="icon-departments" alt="IVF Centre"  src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608584685/Icons/Icon-ivf_lhfrhi.png"></img>,        
+        title: 'IVF Centre',
+        description: 'Dealing with specialized care for couples having difficuly in conceiving a child'
+    },
+    { 
+        icon: <img className="icon-departments" alt="Radiology and Laboratory"  src="https://res.cloudinary.com/alphabetagamma/image/upload/v1608584685/Icons/Icon-lab_jvvxkb.png"></img>,
+        title: 'Radiology and Laboratory',
+        description: 'Advanced medical imaging for diagnosis and well equipped laboratory for in facility testing'
+    }
 ]
 
 

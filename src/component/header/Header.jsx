@@ -50,7 +50,19 @@ class Header extends Component{
                         <nav className="mainmenunav d-lg-block">
                             <ul className="mainmenu">
                                 <li><Link to="/" >Home</Link></li>
-                                <li><Link to="/" >History</Link></li>
+                                <li><Link to="#tpa">TPA Partners</Link></li>
+                                <li><Link to="/" >Expertise</Link></li>
+                                {/* <li className="has-droupdown"><Link to="#">Expertise</Link>
+                                    <ul className="submenu">
+                                        <li><Link to="/obstretics">Obstretics</Link></li>
+                                        <li><Link to="/service/gynaecology">Gynaecology</Link></li>
+                                        <li><Link to="/neonatology-pediatrics">Neonatology and Pediatrics</Link></li>
+                                        <li><Link to="/ivf-centre">IVF Centre</Link></li>
+                                        <li><Link to="/radiology-Laboratory">Radiology and Laboratory</Link></li>
+                                    </ul>
+                                </li> */}
+
+                                <li><Link to="/" >About Us</Link></li>
                                 <li><Link to="/" >Facility</Link></li>
                                 {/* <li className="has-droupdown"><Link to="#">Home</Link>
                                     <ul className="submenu">
@@ -111,7 +123,7 @@ class Header extends Component{
                             </ul>
                         </nav>
                         <div className="header-btn">
-                            <a className="rn-btn" href="">
+                            <a className="rn-btn" href="/">
                                 <span>Book Appointment</span>
                             </a>
                         </div>

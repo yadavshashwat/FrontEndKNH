@@ -1,113 +1,50 @@
 import React, { Component } from "react";
-import { FaFacebookF , FaLinkedinIn , FaTwitter } from "react-icons/fa";
 
 let TeamContent = [
     {
-        images: '01',
-        title: 'Jone Due',
-        designation: 'Sr. Web Developer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-            {
-                icon: <FaTwitter />,
-                url: '#'
-            },
-        ]
+        title: 'Dr Sneh Yadav',
+        designation: 'Senior Gynaecologist',
+        // details:'MBBS & MS (Gynaecology & obstetrics) from SMS Medical college, Jaipur',
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014402/Doctors/sneh_s1gpw6.jpg"
     },
     {
-        images: '02',
-        title: 'Fatima Asrafi',
-        designation: 'Front-end Engineer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-        ]
+        title: 'Dr Udai Bhan Yadav',
+        designation: 'Director and Senior Anaesthetist',
+        // details:'',
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014402/Doctors/udaibhan_kcj778.jpg"
     },
     {
-        images: '03',
-        title: 'Al-Amin Bali',
-        designation: 'Sr. Graphic Designer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-            {
-                icon: <FaTwitter />,
-                url: '#'
-            },
-        ]
+        title: 'Dr Radhika Kundnani',
+        designation: 'Gynaecologist',
+        // details:'',
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014402/Doctors/radhika_thdnc6.jpg"
     },
     {
-        images: '06',
-        title: 'Jone Due',
-        designation: 'Sr. Web Developer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-            {
-                icon: <FaTwitter />,
-                url: '#'
-            },
-        ]
+        title: 'Dr Monika Soni',
+        designation: 'Gynaecologist',
+        // details:'',
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014402/Doctors/monica_ovo0hi.jpg"
     },
     {
-        images: '05',
-        title: 'Fatima Asrafi',
-        designation: 'Front-end Engineer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-        ]
+        title: 'Dr Satveer Singh',
+        designation: 'Radiologist',
+        // details:'',
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014402/Doctors/satveer_jq9ptj.jpg"
     },
     {
-        images: '12',
-        title: 'Al-Amin Bali',
-        designation: 'Sr. Graphic Designer',
-        socialNetwork: [
-            {
-                icon: <FaFacebookF />,
-                url: '#'
-            },
-            {
-                icon: <FaLinkedinIn />,
-                url: '#'
-            },
-            {
-                icon: <FaTwitter />,
-                url: '#'
-            },
-        ]
-    }
+        title: 'Dr Garima Goyal',
+        designation: 'Gynaecologist',
+        // details:'',
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014403/Doctors/garima_t3fwno.jpg"
+    },
+    {
+        title: 'Dr Manisha Yadav',
+        designation: 'Paediatrist',
+        // details:'',
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014403/Doctors/manisha_ccqka2.jpg"
+    },
+
+
 ];
 
 
@@ -120,17 +57,14 @@ class Team extends Component{
                     <div className={`${column}`} key={i}>
                         <div className="team">
                             <div className="thumbnail">
-                                <img src={`/assets/images/team/team-${value.images}.jpg`} alt="Blog Images"/>
+                                <img src={value.img_src} alt={value.title}/>
                             </div>
                             <div className="content">
                                 <h4 className="title">{value.title}</h4>
                                 <p className="designation">{value.designation}</p>
+                                {/* <p className="designation">{value.details}</p> */}
+
                             </div>
-                            <ul className="social-icon" >
-                                {value.socialNetwork.map((social, index) =>
-                                    <li key={index}><a href={`${social.url}`}>{social.icon}</a></li>
-                                )}
-                            </ul>
                         </div>
                     </div>
                 ))}

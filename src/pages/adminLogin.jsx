@@ -2,7 +2,7 @@ import React, { Component , Fragment } from "react";
 
 import TextField from '@atlaskit/textfield';
 import Button from '@atlaskit/button';
-import Cookies from 'universal-cookie';
+// import Cookies from 'universal-cookie';
 
 class AdminLogin extends Component{
     constructor () {

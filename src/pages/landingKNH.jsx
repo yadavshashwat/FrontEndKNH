@@ -1,20 +1,15 @@
 import React, { Component , Fragment } from "react";
-import ModalVideo from 'react-modal-video';
 import ScrollToTop from 'react-scroll-up';
 import Slider from "react-slick";
 import { slideSlick } from "../page-demo/script";
 import ServiceList from "../elements/service/ServiceList";
-import BlogContent from "../elements/blog/BlogContent";
+import NABH from "../elements/NABH";
 import BrandTwo from "../elements/BrandTwo";
-import PortfolioList from "../elements/portfolio/PortfolioList";
 import Header from "../component/header/Header";
-import FooterTwo from "../component/footer/FooterTwo";
-import CallAction from "../elements/callaction/CallAction";
 import Team from "../elements/Team";
-import Accordion01 from "../elements/Accordion";
-import { FiCheck, FiChevronUp } from "react-icons/fi";
+import { FiChevronUp } from "react-icons/fi";
 import Helmet from "../component/common/Helmet";
-
+import Footer from "../component/footer/Footer";
 const SlideList = [
 
     {
@@ -59,20 +54,6 @@ class landingKNH extends Component{
     }
     render(){
 
-        var namesItemOne = [
-            'The Philosophy Of business analytics',
-            'Fast-Track Your business',
-            'Lies And Damn Lies About business',
-            'The Ultimate Deal On business',
-        ];
-        var namesItemTwo = [
-            'Proof That business Really Works',
-            'Here Is What You Should Do For Your business',
-            'The Hidden Mystery Behind business',
-        ];
-        
-        const PostList = BlogContent.slice(0 , 3);
-
         return(
             <Fragment> 
                 <Helmet pageTitle="Kamla Nursing Home" />
@@ -107,7 +88,7 @@ class landingKNH extends Component{
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-12">
-                                <BrandTwo />
+                                <NABH />
                             </div>
                         </div>
                     </div>
@@ -115,13 +96,13 @@ class landingKNH extends Component{
                 {/* End Brand Area */}
 
                 {/* Start Service Area  */}
-                <div className="service-area creative-service-wrapper ptb--120 bg_color--1">
+                <div id="expertise" className="service-area creative-service-wrapper ptb--120 bg_color--1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title service-style--3 text-center mb--30 mb_sm--0">
-                                    <h2 className="title">Our Services</h2>
-                                    <p>Our in house facilitie ensure that complete lifecycle of womanhood and associated needs are taken care off under one roof.</p>
+                                    <h2 className="title">Our Expertise</h2>
+                                    <p>Our expertise services ensure that complete lifecycle of womanhood and associated needs are taken care off under one roof.</p>
                                 </div>
                             </div>
                         </div>
@@ -135,25 +116,21 @@ class landingKNH extends Component{
                 {/* End Service Area  */}
 
                 {/* Start About Area  */}
-                <div className="rn-about-area ptb--120 bg_color--5">
+                <div id="about"  className="rn-about-area ptb--120 bg_color--5">
                     <div className="container">
                         <div className="row row--35 align-items-center">
                             <div className="col-lg-6">
                                 <div className="thumbnail">
-                                    <img className="w-100" src="/assets/images/about/about-4.png" alt="About Images"/>
+                                    <img className="w-100" src="https://res.cloudinary.com/alphabetagamma/image/upload/v1609015718/Doctors/about_knh_pmonlm.jpg" alt="About Images"/>
                                 </div>
                             </div>
                             <div className="col-lg-6">
                                 <div className="about-inner inner">
                                     <div className="section-title">
-                                        <h2 className="title">Working Process</h2>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim exercitationem impedit iure quia quo recusandae?</p>
-                                    </div>
-                                    <div className="accordion-wrapper mt--30">
-                                        <Accordion01 />
-                                    </div>
-                                    <div className="about-button mt--50">
-                                        <a className="rn-button-style--2 btn-solid" href="/about">See how it works</a>
+                                        <h2 className="title">About Us</h2>
+                                        <p>Kamla Nursing Home (KNH) was started in 1992 with small team of 2 doctors/life partners. The doctors while working in government hospitals realized the need of specialized care in small towns such as Alwar, care which was previously limited to bigger cities such as Jaipur and Delhi. They started the hospital with an aim of providing such quality care to the town of Alwar</p>
+                                        <p></p>
+                                        <p>Now the hospital has grown to be a state of the art 100 bedded hospital to provide advanced mother and child care with a dedicated team of 10+ expereinced doctors.</p>
                                     </div>
                                 </div>
                             </div>
@@ -161,135 +138,49 @@ class landingKNH extends Component{
                     </div>
                 </div>
                 {/* End About Area  */}
-
-                {/* Start About Area  */}
-                <div className="rn-about-area ptb--120 bg_color--1">
-                    <div className="container">
-                        <div className="row row--35 align-items-center">
-                            <div className="col-lg-6 order-2 order-lg-1">
-                                <div className="about-inner inner">
-                                    <div className="section-title">
-                                        <h2 className="title">About</h2>
-                                        <p className="description">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.</p>
-                                    </div>
-                                    <div className="mt--30">
-                                        <h4>Lorem ipsum dolor sit.</h4>
-                                        <ul className="list-style--1">
-                                            {namesItemOne.map((name, index) => {
-                                                return <li key={ index }><FiCheck /> {name}</li>;
-                                            })}
-                                        </ul>
-                                    </div>
-                                    <div className="mt--30">
-                                        <h4>Lorem ipsum dolor sit.</h4>
-                                        <ul className="list-style--1">
-                                            {namesItemTwo.map((name, index) => {
-                                                return <li key={ index }><FiCheck /> {name}</li>;
-                                            })}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-lg-6 order-1 order-lg-2">
-                                <div className="thumbnail position-relative">
-                                    <img className="w-100" src="/assets/images/about/about-3.png" alt="About Images"/>
-                                    <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
-                                    <button className="video-popup position-top-center theme-color" onClick={this.openModal}><span className="play-icon"></span></button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* End About Area  */}
-
-                {/* Start Portfolio Area */}
-                <div className="portfolio-area ptb--120 bg_color--5">
-                    <div className="portfolio-sacousel-inner">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                        <h2 className="title">Our Project</h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row">
-                                <PortfolioList styevariation="text-left mt--40" column="col-lg-4 col-md-6 col-sm-6 col-12" item="6" />
-                            </div>
-                            <div className="row">
-                                <div className="col-lg-12">
-                                    <div className="view-more-btn mt--60 text-center">
-                                        <a className="rn-button-style--2 btn-solid" href="/portfolio"><span>View More Project</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {/* End Portfolio Area */}
 
                 {/* Start Team Area  */}
-                <div className="rn-team-area ptb--120 bg_color--1">
+                <div id="team"  className="rn-team-area ptb--120 bg_color--1">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title service-style--3 text-center mb--25 mb_sm--0">
-                                    <h2 className="title">Skilled Team</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2 className="title">Our Team</h2>
+                                    <p>Years of experience and expertise of our doctors is what sets us apart.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="row">
-                            <Team column="col-lg-4 col-md-6 col-sm-6 col-12" />
+                            <Team column="col-lg-3 col-md-4 col-sm-4 col-6" />
                         </div>
                     </div>
                 </div>
                 {/* End Team Area  */}
 
 
-                {/* Start Blog Area */}
-                <div className="rn-blog-area pt--120 pb--80 bg_color--5">
+
+                {/* Start TPA Area */}
+                <div id="tpa"  className="rn-blog-area pt--120 pb--80 bg_color--5">
                     <div className="container">
-                        <div className="row align-items-end">
+                        <div className="row">
                             <div className="col-lg-12">
-                                <div className="section-title service-style--3 text-center">
-                                    <h2 className="title">Latest News</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                <div className="section-title service-style--3 text-center mb--30 mb_sm--0">
+                                    <h2 className="title">Insurance Partners</h2>
+                                    <p>Our partnerships across medical insurance partners ensure hassle free payment.</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="row mt--60">
-                            {PostList.map((value , i ) => (
-                                <div className="col-lg-4 col-md-6 col-sm-6 col-12" key={i}>
-                                    <div className="blog blog-style--1">
-                                        <div className="thumbnail">
-                                            <a href="/blog-details">
-                                                <img className="w-100" src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
-                                            </a>
-                                        </div>
-                                        <div className="content">
-                                            <p className="blogtype">{value.category}</p>
-                                            <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
-                                            <div className="blog-btn">
-                                                <a className="rn-btn text-white" href="/blog-details">Read More</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>    
-                    </div>    
+                        <div className="row align-items-center">
+                            <div className="col-lg-12">
+                                <BrandTwo/>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                {/* End Blog Area */}
+                {/* End TPA Area */}
 
-                {/* Start call To Action  */}
-                <CallAction />
-                {/* End call To Action  */}
 
-                {/* Start Footer Style  */}
-                <FooterTwo />
-                {/* End Footer Style  */}
+                <Footer />
 
                 {/* Start Back To Top */}
                 <div className="backto-top">
