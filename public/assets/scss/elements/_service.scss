@@ -109,6 +109,9 @@
            img{
             height: 70px;
             filter: invert(72%) sepia(75%) saturate(391%) hue-rotate(146deg) brightness(94%) contrast(88%);
+            @media #{$large-mobile} {
+                filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(169deg) brightness(108%) contrast(101%);
+            }
            }
         }
     

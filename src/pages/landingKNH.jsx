@@ -151,7 +151,7 @@ class landingKNH extends Component{
                             </div>
                         </div>
                         <div className="row">
-                            <Team column="col-lg-3 col-md-4 col-sm-4 col-6" />
+                            <Team column="col-lg-3 col-md-4 col-sm-4 col-12" />
                         </div>
                     </div>
                 </div>
