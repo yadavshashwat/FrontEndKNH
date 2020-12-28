@@ -84,7 +84,7 @@ class landingKNH extends Component{
                 {/* End Slider Area   */}
                 
                 {/* Start Brand Area */}
-                <div className="rn-brand-area bg_color--5 ptb--60">
+                <div className="rn-brand-area bg_color--5 ptb--30">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-12">
@@ -151,7 +151,7 @@ class landingKNH extends Component{
                             </div>
                         </div>
                         <div className="row">
-                            <Team column="col-lg-3 col-md-4 col-sm-4 col-12" />
+                            <Team column="col-lg-3 col-md-4 col-sm-6 col-12" />
                         </div>
                     </div>
                 </div>

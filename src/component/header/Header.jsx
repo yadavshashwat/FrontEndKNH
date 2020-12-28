@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import { FiX , FiMenu } from "react-icons/fi";
-
+import { HashLink as HLink } from 'react-router-hash-link';
 
 class Header extends Component{
     constructor(props) {
@@ -51,7 +51,7 @@ class Header extends Component{
                             <ul className="mainmenu">
                                 <li><Link to="/" >Home</Link></li>
                                 <li><Link to="#tpa">TPA Partners</Link></li>
-                                <li><Link to="/" >Expertise</Link></li>
+                                <li><Link to="#expertise" >Expertise</Link></li>
                                 {/* <li className="has-droupdown"><Link to="#">Expertise</Link>
                                     <ul className="submenu">
                                         <li><Link to="/obstretics">Obstretics</Link></li>
@@ -62,8 +62,8 @@ class Header extends Component{
                                     </ul>
                                 </li> */}
 
-                                <li><Link to="/" >About Us</Link></li>
-                                <li><Link to="/" >Facility</Link></li>
+                                <li><Link to="#about" >About Us</Link></li>
+                                {/* <li><Link to="/" >Facility</Link></li> */}
                                 {/* <li className="has-droupdown"><Link to="#">Home</Link>
                                     <ul className="submenu">
                                         <li><Link to="/main-demo">Main Demo</Link></li>

@@ -125,6 +125,16 @@
     }
 }
 
+.ptb--30 {
+    @media #{$sm-layout} {
+        padding: 15px 0 !important;
+    }
+    @media #{$md-layout} {
+        padding: 15px 0 !important;
+    }
+}
+
+
 .pt--120,
 .pt--140,
 .pt--110 {
