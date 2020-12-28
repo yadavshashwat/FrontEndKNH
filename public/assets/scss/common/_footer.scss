@@ -6,6 +6,7 @@ Footer Styles
     position: relative;
 }
 
+
 .footer-left {
     background: linear-gradient(145deg, #56cfe1ff 0%, #7400b8ff 100%);
     padding: 120px 120px;
@@ -40,20 +41,20 @@ Footer Styles
     .inner {
         z-index: 5;
         position: relative;
-        &::after{
-            //content: "tryDO";
-            content: url(/assets/images/logo/big-logo.png);
-            position: absolute;
-            right: 0;
-            top: 50%;
-            z-index: -1;
-            font-size: 240px;
-            font-weight: 900;
-            color: rgba(0, 0, 0, 0.1);
-            transform: translateY(-50%);
-            width: 295px;
-            height: 301px;
-        }
+        // &::after{
+        //     //content: "tryDO";
+        //     content: url(/assets/images/logo/big-logo.png);
+        //     position: absolute;
+        //     right: 0;
+        //     top: 50%;
+        //     z-index: -1;
+        //     font-size: 240px;
+        //     font-weight: 900;
+        //     color: rgba(0, 0, 0, 0.1);
+        //     transform: translateY(-50%);
+        //     width: 295px;
+        //     height: 301px;
+        // }
         >span {
             color: #fff;
             font-size: 15px;
@@ -135,6 +136,14 @@ Footer Styles
             @media #{$sm-layout} {
                 margin-bottom: 14px;
             }
+        }
+        p{
+            color: #c6c9d8;
+            font-size: 16px;
+            @extend %transition;
+            opacity: 0.75;
+            margin-bottom: 1px;
+            margin-top: 10px;
         }
         ul {
             &.ft-link {

@@ -14,8 +14,8 @@ class Footer extends Component{
                             <div className="col-lg-6">
                                 <div className="footer-left">
                                     <div className="inner">
-                                        <span>Ready To Do This</span>
-                                        <h2>Let's get <br /> to work</h2>
+                                        {/* <span>Your care our responsibility</span> */}
+                                        <h2>Your care<br/>our duty</h2>
                                         <a className="rn-button-style--2" href="/contact">
                                             <span>Contact Us</span>
                                         </a>
@@ -28,11 +28,11 @@ class Footer extends Component{
                                         {/* Start Single Widget  */}
                                         <div className="col-lg-6 col-sm-6 col-12">
                                             <div className="footer-link">
-                                                <h4>Quick Link</h4>
+                                                <h4>Quick Links</h4>
                                                 <ul className="ft-link">
-                                                    <li><a href="/portfolio">Work</a></li>
-                                                    <li><a href="/about">About</a></li>
-                                                    <li><a href="/contact">Let's Talk</a></li>
+                                                    <li><a href="/portfolio">TPA Partners</a></li>
+                                                    <li><a href="/about">About Us</a></li>
+                                                    {/* <li><a href="/contact">Let's Talk</a></li> */}
                                                 </ul>
                                             </div>
                                         </div>
@@ -40,10 +40,16 @@ class Footer extends Component{
                                         {/* Start Single Widget  */}
                                         <div className="col-lg-6 col-sm-6 col-12 mt_mobile--30">
                                             <div className="footer-link">
-                                                <h4>Say Hello</h4>
+                                                <h4>How to reach us</h4>
+                                                <div className="knh-address">
+                                                    <p>Address:</p>
+                                                    <p>21, Manu Marg, Alwar, Rajasthan, 301001</p>
+                                                </div>                                            
                                                 <ul className="ft-link">
-                                                    <li><a href="mailto:admin@example.com">admin@example.com</a></li>
-                                                    <li><a href="mailto:hr@example.com">hr@example.com</a></li>
+                                                    <li><p>Email:</p><a href="mailto:kamlanursinghome123@gmail.com">kamlanursinghome123@gmail.com</a></li>
+                                                </ul>
+                                                <ul className="ft-link">
+                                                    
                                                 </ul>
 
                                                 <div className="social-share-inner">
@@ -59,7 +65,7 @@ class Footer extends Component{
 
                                         <div className="col-lg-12">
                                             <div className="copyright-text">
-                                                <p>Copyright © 2020 Rainbow-Themes. All Rights Reserved.</p>
+                                                <p>Copyright © Kamla Nursing Home. All Rights Reserved.</p>
                                             </div>
                                         </div>
                                     </div>
