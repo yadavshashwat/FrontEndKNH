@@ -10,14 +10,25 @@ class ServiceDetails extends Component{
     constructor () {
         super()
         this.state = {
-          isOpen: false
+          isOpen: false,
+          tpaList:[
+            'Medi Assist India TPA', 'Raksha TPA', 'Family Health Plan TPA', 'Heritage Health TPA', 'Max Bupa', 'Apollo Munic Healthcare ( Now HDFC Ergo Health)', 'Vipul Med Corp TPA', 'Health India TPA Services Pvt. Ltd.', 'Good Health TPA Services Ltd.', 'Genins India TPA Ltd', 'Star Health And Allied Insurance Co. Ltd.', 'Future Generali', 'United Healthcare Parekh', 'Care Health Insurance Ltd. (Formaly Religare Health)', 'Bajaj Allianz Insurance', 'ICICI Lombard', 'H.D.F.C. Ergo', 'Chola MS', 'Ericson Insurance TPA Pvt. Ltd.', 'IFFCO Tokiyo General Insurance', 'Alankit Insurance TPA Ltd.', 'Cigna TTK Health Insurance', 'Medicare Insurance TPA Services Pvt. Ltd.', 'E-Meditek Insurance TPA Ltd.', 'Universal Sompo General Insurance', 'Sunrise Medicorp Solution Private Ltd.', 'Safeway Insurnace TPA Pvt. Ltd.', 'Focus Healthservices TPA', 'Rothshield Healthcare TPA Services Limited', 'Park Medicalim', 'Liberty Videocon General Insurance', 'Aditya Birla Health Insurance', 'Dedicated Healthcare Services', 'Go Digit General Insurance Co. Ltd. (MediAssist TPA)', 'East West Assist TPA'
+          ],
         }
         this.openModal = this.openModal.bind(this)
     }
     openModal () {
         this.setState({isOpen: true})
     }
+      // On Load
+
+
     render(){
+        let tpaList = null
+        tpaList = this.state.tpaList.map((row,index) => {
+            return (<tr><td>{index + 1}</td><td>{row}</td></tr>);
+        });
+        
         return(
             <React.Fragment>
                 {/* Start Pagehelmet  */}
@@ -27,13 +38,12 @@ class ServiceDetails extends Component{
                 <Header headertransparent="header--transparent" colorblack="color--black" logoname="logo.png" />
 
                 {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--5"  data-black-overlay="5">
+                <div className="rn-page-title-area pt--120 pb--190 bg_image image-facility2"  data-black-overlay="5">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">WEBSITE DEVELOPMENT</h2>
-                                    <p>Fresh From The Press Discription</p>
+                                    <h2 className="title service-title-sub">Our TPA Partners</h2>
                                 </div>
                             </div>
                         </div>
@@ -50,23 +60,18 @@ class ServiceDetails extends Component{
                                     <div className="inner">
                                         {/* Start Single Area */}
                                         <div className="row sercice-details-content pb--80 align-items-center">
-                                            <div className="col-lg-6 col-12">
-                                                <div className="thumb">
-                                                    <img className="w-100" src="/assets/images/service/service-01.png" alt="Service Images"/>
-                                                </div>
-                                            </div>
-                                            <div className="col-lg-6 col-12">
+                                            <div className="col-lg-12 col-12">
                                                 <div className="details mt_md--30 mt_sm--30">
-                                                    <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum. You need to be sure there isn't anything embarrassing</p>
-                                                    <p>hidden in the middle of text. All the Lorem Ipsum generators tend toitrrepeat predefined chunks. Necessary, making this the first true generator on the Internet.</p>
-                                                    <h4 className="title">Proceess of metel</h4>
-                                                    <ul className="liststyle">
-                                                        <li>Yet this above sewed flirted opened ouch</li>
-                                                        <li>Goldfinch realistic sporadic ingenuous</li>
-                                                        <li>Abominable this abidin far successfully then like piquan</li>
-                                                        <li>Risus commodo viverra</li>
-                                                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing</li>
-                                                    </ul>
+                                                    <h4 className="title">List of Empanelled TPA / Insurance Company</h4>
+                                                    <table>
+                                                        <thead>
+                                                            <th>S. No.</th>
+                                                            <th>Company Name</th>
+                                                        </thead>
+                                                        <tbody>
+                                                            {tpaList}
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
                                         </div>

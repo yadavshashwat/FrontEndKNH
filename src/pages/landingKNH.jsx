@@ -160,7 +160,7 @@ class landingKNH extends Component{
 
 
                 {/* Start TPA Area */}
-                <div id="tpa"  className="rn-blog-area pt--120 pb--80 bg_color--5">
+                <div idName="tpa"  className="rn-blog-area pt--120 pb--80 bg_color--5">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -173,6 +173,7 @@ class landingKNH extends Component{
                         <div className="row align-items-center">
                             <div className="col-lg-12">
                                 <BrandTwo/>
+                                <div className="view-all-btn"><a className="rn-button-style--2 btn-solid" href={'/tpa-partners'}>View All Partners</a></div>
                             </div>
                         </div>
                     </div>

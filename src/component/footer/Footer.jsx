@@ -1,5 +1,10 @@
 import React, { Component } from "react";
-import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
+import {
+    // FaTwitter ,
+    // FaInstagram ,
+    FaFacebookF
+    //  , FaLinkedinIn
+    } from "react-icons/fa";
 
 const SocialShare = [
     {Social: <FaFacebookF /> , link: 'https://www.facebook.com/knhalwar'}
@@ -16,9 +21,9 @@ class Footer extends Component{
                                     <div className="inner">
                                         {/* <span>Your care our responsibility</span> */}
                                         <h2>Your care<br/>our duty</h2>
-                                        <a className="rn-button-style--2" href="/contact">
-                                            <span>Contact Us</span>
-                                        </a>
+                                        {/* <a className="rn-button-style--2" href="/contact"> */}
+                                            {/* <span>Contact Us</span> */}
+                                        {/* </a> */}
                                     </div>
                                 </div>
                             </div>

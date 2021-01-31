@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import { FiX , FiMenu } from "react-icons/fi";
-import { HashLink as HLink } from 'react-router-hash-link';
+// import { HashLink as HLink } from 'react-router-hash-link';
 
 class Header extends Component{
     constructor(props) {

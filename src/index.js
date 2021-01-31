@@ -11,7 +11,8 @@ import './index.scss';
 
 // Home layout
 import landingKNH from './pages/landingKNH';
-import gynaecologyPage from './pages/gynaecologyPage';
+import servicePage from './pages/servicePage';
+import tpaPage from './pages/tpa';
 import adminLogin from './pages/adminLogin';
 
 
@@ -31,10 +32,13 @@ class Root extends Component{
             <BrowserRouter basename={'/'}>
                 <Switch>
                     <Route exact path={`${process.env.PUBLIC_URL}/`} component={landingKNH}/>
-                    <Route exact path={`${process.env.PUBLIC_URL}/service/gynaecology`} component={gynaecologyPage}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/service/gynaecology`} component={servicePage}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/service/obstretics`} component={servicePage}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/service/neonatology`} component={servicePage}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/service/radiology`} component={servicePage}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/service/ivf`} component={servicePage}/>
+                    <Route exact path={`${process.env.PUBLIC_URL}/tpa-partners`} component={tpaPage}/>
                     <Route exact path={`${process.env.PUBLIC_URL}/adminpanel`} component={adminLogin}/>
-
-
                     <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/>
                     <Route component={error404}/>
 

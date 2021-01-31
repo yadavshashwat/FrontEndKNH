@@ -138,12 +138,6 @@ font-family: 'Poppins', sans-serif;
 }
 
 
-// @for $i from 1 through 35 {
-//     .bg_image--#{$i} {
-//         background-image: url(/assets/images/bg/bg-image-#{$i}.jpg) !important;
-//     }
-// }
-
 .image-team{
     background-image: url(https://res.cloudinary.com/alphabetagamma/image/upload/v1608578376/Backgrounds/OurTeam_bq1tph.jpg) !important;
 }
@@ -155,6 +149,12 @@ font-family: 'Poppins', sans-serif;
 .image-care{
     background-image: url(https://res.cloudinary.com/alphabetagamma/image/upload/v1608578375/Backgrounds/ourcare_tetwhd.jpg) !important;
 }
+
+.image-facility2{
+    background-image: url(https://res.cloudinary.com/alphabetagamma/image/upload/v1608578376/Backgrounds/ourFacility_ztwzcn.jpg) !important;
+}
+
+
 
 @for $i from 1 through 80 {
     .font--#{$i}{

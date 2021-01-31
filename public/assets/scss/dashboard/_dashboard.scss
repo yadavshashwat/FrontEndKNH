@@ -2,16 +2,16 @@
     Service Details Styles 
 -----------------------------*/
 
-// .header-area{
-//     .logo{
-//         height: 120px;        
-//     }
-// }
 .logo-knh-main{
     height: 120px;
     // width: 200px;
 }
 
+.view-all-btn{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .admin-page {
     display: table;
     position: absolute;
