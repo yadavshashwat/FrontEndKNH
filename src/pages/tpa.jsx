@@ -6,7 +6,7 @@ import Header from "../component/header/Header";
 import Footer from "../component/footer/Footer";
 
 
-class ServiceDetails extends Component{
+class TPADetails extends Component{
     constructor () {
         super()
         this.state = {
@@ -26,7 +26,7 @@ class ServiceDetails extends Component{
     render(){
         let tpaList = null
         tpaList = this.state.tpaList.map((row,index) => {
-            return (<tr><td>{index + 1}</td><td>{row}</td></tr>);
+            return (<tr key={index}><td>{index + 1}</td><td>{row}</td></tr>);
         });
         
         return(
@@ -65,11 +65,13 @@ class ServiceDetails extends Component{
                                                     <h4 className="title">List of Empanelled TPA / Insurance Company</h4>
                                                     <table>
                                                         <thead>
+                                                        <tr>
                                                             <th>S. No.</th>
                                                             <th>Company Name</th>
+                                                        </tr>
                                                         </thead>
                                                         <tbody>
-                                                            {tpaList}
+                                                        {tpaList}
                                                         </tbody>
                                                     </table>
                                                 </div>
@@ -98,4 +100,4 @@ class ServiceDetails extends Component{
         )
     }
 }
-export default ServiceDetails;
+export default TPADetails;

@@ -203,8 +203,8 @@ class ServiceDetails extends Component{
 
     render(){
         let serviceListElement = null
-        serviceListElement = this.state.serviceList.map((row) => {
-            return (<li>{row}</li>);
+        serviceListElement = this.state.serviceList.map((row,index) => {
+            return (<li key={index}>{row}</li>);
         });
         
         return(

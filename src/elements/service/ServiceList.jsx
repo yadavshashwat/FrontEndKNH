@@ -35,7 +35,7 @@ const ServiceList = [
 ]
 
 
-class ServiceThree extends Component{
+class ServiceListOut extends Component{
     render(){
         const {column } = this.props;
         const ServiceContent = ServiceList.slice(0 , this.props.item);
@@ -63,4 +63,4 @@ class ServiceThree extends Component{
         )
     }
 }
-export default ServiceThree;
+export default ServiceListOut;
