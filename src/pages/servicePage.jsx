@@ -246,11 +246,11 @@ class ServiceDetails extends Component{
                                             <div className="col-lg-6 col-12">
                                                 <div className="details mt_md--30 mt_sm--30">
                                                     <h2 className="title">{this.state.serviceName}</h2>
-                                                    <p>{this.state.serviceDetails}</p>
+                                                        <p>{this.state.serviceDetails}</p>
                                                     <h4 className="title">Special Services</h4>
-                                                    <ul className="liststyle">
-                                                        {serviceListElement}
-                                                    </ul>
+                                                        <ul className="liststyle">
+                                                            {serviceListElement}
+                                                        </ul>
                                                 </div>
                                             </div>
                                         </div>
