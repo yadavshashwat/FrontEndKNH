@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import { FiX , FiMenu } from "react-icons/fi";
-// import { HashLink as HLink } from 'react-router-hash-link';
+import { HashLink as HLink } from 'react-router-hash-link';
 
 class Header extends Component{
     constructor(props) {
@@ -22,6 +22,7 @@ class Header extends Component{
         document.querySelector('.header-wrapper').classList.remove('menu-open');
     }
 
+    
 
     render(){
         var elements = document.querySelectorAll('.has-droupdown > a');
@@ -50,76 +51,18 @@ class Header extends Component{
                         <nav className="mainmenunav d-lg-block">
                             <ul className="mainmenu">
                                 <li><Link to="/" >Home</Link></li>
-                                <li><Link to="#tpa">TPA Partners</Link></li>
-                                <li><Link to="#expertise" >Expertise</Link></li>
-                                {/* <li className="has-droupdown"><Link to="#">Expertise</Link>
+                                <li><HLink to="/#tpa">TPA Partners</HLink></li>
+                                {/* <li><HLink to="#expertise" >Expertise</HLink></li> */}
+                                <li className="has-droupdown"><HLink to="/#expertise">Expertise</HLink>
                                     <ul className="submenu">
-                                        <li><Link to="/obstretics">Obstretics</Link></li>
-                                        <li><Link to="/service/gynaecology">Gynaecology</Link></li>
-                                        <li><Link to="/neonatology-pediatrics">Neonatology and Pediatrics</Link></li>
-                                        <li><Link to="/ivf-centre">IVF Centre</Link></li>
-                                        <li><Link to="/radiology-Laboratory">Radiology and Laboratory</Link></li>
+                                    <li><Link to="/service/gynaecology">Gynaecology</Link></li>
+                                        <li><Link to="/service/obstretics">Obstretics</Link></li>
+                                        <li><Link to="/service/neonatology">Neonatology and Pediatrics</Link></li>
+                                        <li><Link to="/service/ivf">IVF Centre</Link></li>
+                                        <li><Link to="/service/radiology">Radiology and Laboratory</Link></li>
                                     </ul>
-                                </li> */}
-
-                                <li><Link to="#about" >About Us</Link></li>
-                                {/* <li><Link to="/" >Facility</Link></li> */}
-                                {/* <li className="has-droupdown"><Link to="#">Home</Link>
-                                    <ul className="submenu">
-                                        <li><Link to="/main-demo">Main Demo</Link></li>
-                                        <li><Link to="/dark-main-demo">Main Demo Dark</Link></li>
-                                        <li><Link to="/creative-agency">Creative Agency</Link></li>
-                                        <li><Link to="/creative-landing">Creative One Page</Link></li>
-                                        <li><Link to="/creative-portfolio">Creative Portfolio</Link></li>
-                                        <li><Link to="/personal-portfolio">Personal Portfolio</Link></li>
-                                        <li><Link to="/portfolio-landing">Portfolio One Page</Link></li>
-                                        <li><Link to="/dark-portfolio-landing">Portfolio One Page 02</Link></li>
-                                        <li><Link to="/digital-agency">Digital Agency</Link></li>
-                                        <li><Link to="/startup">Startup</Link></li>
-                                        <li><Link to="/paralax">Paralax</Link></li>
-                                        <li><Link to="/portfolio-home">Minimal Portfolio</Link></li>
-                                        <li><Link to="/business">Business</Link></li>
-                                        <li><Link to="/home-particles">Home Particles</Link></li>
-                                        <li><Link to="/studio-agency">Studio Agency</Link></li>
-                                        <li><Link to="/designer-portfolio">Designer Portfolio</Link></li>
-                                    </ul>
-                                </li> */}
-                                {/* <li className="has-droupdown"><Link to="/service" >Service</Link>
-                                    <ul className="submenu">
-                                        <li><Link to="/service">Service</Link></li>
-                                        <li><Link to="/service-details">Service Details</Link></li>
-                                    </ul>
-                                </li> */}
-                                {/* <li><Link to="/about" >About</Link></li> */}
-                                {/* <li className="has-droupdown"><Link to="#pages" >Pages</Link>
-                                    <ul className="submenu">
-                                        <li><Link to="/blog">Blog List</Link></li>
-                                        <li><Link to="/blog-details">Blog Details</Link></li>
-                                        <li><Link to="/service">Service</Link></li>
-                                        <li><Link to="/service-details">Service Details</Link></li>
-                                        <li><Link to="/portfolio">Portfolio</Link></li>
-                                        <li><Link to="/portfolio-details">Portfolio Details</Link></li>
-                                        <li><Link to="/404">404</Link></li>
-                                    </ul>
-                                </li> */}
-                                {/* <li className="has-droupdown"><Link to="#" >Blocks</Link>
-                                    <ul className="submenu">
-                                        <li><Link to="/portfolio">Portfolio</Link></li>
-                                        <li><Link to="/team">Team</Link></li>
-                                        <li><Link to="/service">Service</Link></li>
-                                        <li><Link to="/video-popup">Video Popup</Link></li>
-                                        <li><Link to="/progressbar">Progressbar</Link></li>
-                                        <li><Link to="/gallery">Gallery</Link></li>
-                                        <li><Link to="/counters">Counters</Link></li>
-                                        <li><Link to="/blog">Blog List</Link></li>
-                                        <li><Link to="/clint-logo">Clint Logo</Link></li>
-                                        <li><Link to="/contact-form">Contact Form</Link></li>
-                                        <li><Link to="/google-map">Google Map</Link></li>
-                                        <li><Link to="/columns">Columns</Link></li>
-                                        <li><Link to="/pricing-table">Pricing Table</Link></li>
-                                    </ul>
-                                </li> */}
-                                {/* <li><Link to="/contact" >Contact</Link></li> */}
+                                </li>
+                                <li><HLink to="/#about" >About Us</HLink></li>
                             </ul>
                         </nav>
                         <div className="header-btn">

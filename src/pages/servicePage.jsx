@@ -24,6 +24,96 @@ class ServiceDetails extends Component{
         this.setState({isOpen: true})
     }
       // On Load
+
+    componentDidUpdate(prevProps) {
+    if (this.props.location !== prevProps.location) {
+        this.onRouteChanged();
+    }
+    }
+    onRouteChanged() {
+        var path = window.location.pathname;
+        var path_list  = path.split("/");
+        if(path_list[2]==="gynaecology"){
+            this.setState({
+                serviceDetails: "Dealing with the specialized care of women health issues from menarche to menopause",
+                serviceList: [
+                            'Minimal Access Procedures',
+                            'Total Laparoscopic Hysterectomy',
+                            'Laparoscopic Cholecystostomy',
+                            'Laparoscopic Appendicectomy',
+                            'Laparoscopic Hernia Repair',
+                            'Laparoscopic Ectopic/Ovarian Cyst Surgery',
+                            'General Laparoscopic Sugery'
+                            ],
+                serviceName: "Gynaecology",
+                imageName:'https://res.cloudinary.com/alphabetagamma/image/upload/v1612114735/Images/gynaecology_yphdzm.jpg'
+              })
+        }else if(path_list[2]==="obstretics"){
+            this.setState({
+                serviceDetails: "Dealing with the specialized care of the mother during pregnancy and child birth",
+                serviceList: [
+                            'High Risk Pregnancy Care',
+                            'Aptopic Pregnancy Care',
+                            'Recurrent Abortion Management',
+                            'Yoga Life Style Clinic',
+                            'ICU Care',
+                            ],
+                serviceName: "Obstretics",
+                imageName:'https://res.cloudinary.com/alphabetagamma/image/upload/v1612114762/Images/obstretics_dt4xl5.jpg'
+
+                
+              })            
+        }else if(path_list[2]==="neonatology"){
+            this.setState({
+                serviceDetails: "Dealing with the specialized care of the new born babies and children",
+                serviceList: [
+                            'Advanced Neonatal Care',
+                            'Photo Therapy',
+                            'Ventilator',
+                            'Advanced Care of Pre-Term Babies',
+                            'Genetic Counselling',
+                            'Well Baby Clinic',
+                            'Development Follow Up Clinic',
+                            'NICU Care',
+                            'Neonatal Transport Facility',
+                            'Vaccination Facility'
+                            ],
+                serviceName: "Neonatology and Pediatrics",
+                imageName:'https://res.cloudinary.com/alphabetagamma/image/upload/v1612114735/Images/nenatal_ggrv6a.jpg'
+              })
+        }else if(path_list[2]==="ivf"){
+            this.setState({
+                serviceDetails: "Dealing with specialized care for couples having difficuly in conceiving a child",
+                serviceList: [
+                            'Fallopian tube damage or blockage',
+                            'Ovulation disorders',
+                            'Endometriosis',
+                            'Uterine fibroids',
+                            'Previous tubal sterilization or removal',
+                            'Impaired sperm production or function',
+                            'Unexplained infertility',
+                            'A genetic disorder',
+                            'Fertility preservation for cancer or other health conditions'
+                            ],
+                serviceName: "IVF Centre",
+                imageName:'https://res.cloudinary.com/alphabetagamma/image/upload/v1612114743/Images/ivf_dg9swg.jpg'
+              })
+        }else if(path_list[2]==="radiology"){
+            this.setState({
+                serviceDetails: "Advanced medical imaging for diagnosis and well equipped laboratory for in facility testing",
+                serviceList: [
+                            '4D Ultrasound',
+                            'Digital X-Ray',
+                            'HSG (Hysterosalpingogram)',
+                            'Partnership with Lal Path Labs',
+                            'Home Collection',
+                            'Well Equipped Lab'
+                            ],
+                serviceName: "Radiology and Laboratory",
+                imageName:'https://res.cloudinary.com/alphabetagamma/image/upload/v1612114735/Images/sonography_n6yufe.jpg'
+              })
+        }
+    }
   componentDidMount() {
         var path = window.location.pathname;
         var path_list  = path.split("/");

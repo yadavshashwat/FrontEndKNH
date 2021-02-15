@@ -160,7 +160,7 @@ class landingKNH extends Component{
 
 
                 {/* Start TPA Area */}
-                <div idName="tpa"  className="rn-blog-area pt--120 pb--80 bg_color--5">
+                <div id="tpa"  className="rn-blog-area pt--120 pb--80 bg_color--5">
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">

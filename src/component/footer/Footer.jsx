@@ -35,9 +35,8 @@ class Footer extends Component{
                                             <div className="footer-link">
                                                 <h4>Quick Links</h4>
                                                 <ul className="ft-link">
-                                                    <li><a href="/portfolio">TPA Partners</a></li>
-                                                    <li><a href="/about">About Us</a></li>
-                                                    {/* <li><a href="/contact">Let's Talk</a></li> */}
+                                                    <li><a href="/tpa-partners">TPA Partners</a></li>
+                                                    <li><a href="/#about">About Us</a></li>
                                                 </ul>
                                             </div>
                                         </div>

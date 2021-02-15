@@ -53,7 +53,7 @@ class Gallery extends Component {
         return (
             <div>
                 <main className="page-wrapper">
-                    <div className="rn-portfolio-area ptb--120 bg_color--1 line-separator">
+                    <div className="rn-portfolio-area bg_color--1 line-separator">
                         <div className="container">
                             <div className="row">
                                 {TabOne.map((value , index) => (
