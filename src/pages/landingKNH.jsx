@@ -2,14 +2,17 @@ import React, { Component , Fragment } from "react";
 import ScrollToTop from 'react-scroll-up';
 import Slider from "react-slick";
 import { slideSlick } from "../page-demo/script";
-import ServiceList from "../elements/service/ServiceList";
-import NABH from "../elements/NABH";
-import BrandTwo from "../elements/BrandTwo";
-import Header from "../component/header/Header";
-import Team from "../elements/Team";
 import { FiChevronUp } from "react-icons/fi";
-import Helmet from "../component/common/Helmet";
-import Footer from "../component/footer/Footer";
+
+import Team from "../elements/Team";
+import ServiceList from "../elements/ServiceList";
+import NABH from "../elements/NABH";
+import TPABrands from "../elements/TPABrands";
+
+import PageHelmet from "../component/Helmet";
+import Footer from "../component/Footer";
+import Header from "../component/Header";
+
 const SlideList = [
 
     {
@@ -56,7 +59,7 @@ class landingKNH extends Component{
 
         return(
             <Fragment> 
-                <Helmet pageTitle="Kamla Nursing Home" />
+                <PageHelmet pageTitle="Kamla Nursing Home" />
                 <Header />
                 {/* Start Slider Area   */}
                 <div className="slider-wrapper">
@@ -172,7 +175,7 @@ class landingKNH extends Component{
                         </div>
                         <div className="row align-items-center">
                             <div className="col-lg-12">
-                                <BrandTwo/>
+                                <TPABrands/>
                                 <div className="view-all-btn"><a className="rn-button-style--2 btn-solid" href={'/tpa-partners'}>View All Partners</a></div>
                             </div>
                         </div>

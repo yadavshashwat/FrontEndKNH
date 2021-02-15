@@ -19,7 +19,7 @@ import facilityPage from './pages/facilityPage';
 
 
 // Element Layout
-import error404 from "./elements/error404";
+import error404 from "./pages/error404";
 
 
 
