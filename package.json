@@ -1,8 +1,8 @@
 {
-  "name": "trydo",
+  "name": "KNH Hospital Alwar",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://trydo.rainbowit.net",
+  "homepage": "http://www.kamlanursinghome.com",
   "basename": "/",
   "dependencies": {
     "@atlaskit/button": "^15.1.1",
