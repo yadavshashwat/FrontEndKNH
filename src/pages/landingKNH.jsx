@@ -71,7 +71,7 @@ class landingKNH extends Component{
                                                     {value.category ? <span>{value.category}</span> : ''}
                                                     {value.title ? <h1 className="title">{value.title}</h1> : ''}
                                                     {value.description ? <p className="description">{value.description}</p> : ''}
-                                                    {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-solid" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
+                                                    {/* {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-solid" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''} */}
                                                 </div>
                                             </div>
                                         </div>
