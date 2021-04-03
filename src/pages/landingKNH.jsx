@@ -1,7 +1,7 @@
 import React, { Component , Fragment } from "react";
 import ScrollToTop from 'react-scroll-up';
 import Slider from "react-slick";
-import { slideSlick } from "../page-demo/script";
+import { slideSlick } from "../scripts/script";
 import { FiChevronUp } from "react-icons/fi";
 
 import Team from "../elements/Team";
