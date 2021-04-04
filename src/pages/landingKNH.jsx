@@ -12,6 +12,29 @@ import TPABrands from "../elements/TPABrands";
 import PageHelmet from "../component/Helmet";
 import Footer from "../component/Footer";
 import Header from "../component/Header";
+import childDevelopment from "../../public/assets/docs/child-development.pdf"
+
+const BlogContent = [
+    {
+        images: 'https://res.cloudinary.com/alphabetagamma/image/upload/v1617527853/Images/childdev_qph2av.jpg',
+        title: 'Sensitivity Child Development Clinic',
+        category: 'Events - 11-Apr',
+        link: childDevelopment
+
+    }
+    // {
+    //     images: '02',
+    //     title: 'A big ticket gone to be an interesting ',
+    //     category: 'Management'
+    // },
+
+    // {
+    //     images: '03',
+    //     title: 'The Home of the Future Could Bebes',
+    //     category: 'Design'
+    // }
+]
+
 
 const SlideList = [
 
@@ -85,7 +108,52 @@ class landingKNH extends Component{
                     </div>
                 </div>
                 {/* End Slider Area   */}
-                
+
+                {/* Start Blog Area */}
+                <div className="rn-blog-area pt--30 bg_color--1 mb-dec--30">
+                    <div className="container">
+                        {/* <div className="row align-items-end">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div className="section-title text-left">
+                                    <h2>Latest @ KNH</h2>
+                                    <p>Latest events and services for the all round care of our patients</p>
+                                </div>
+                            </div>
+                        </div> */}
+                        <div className="row align-items-end">
+                            <div className="col-lg-12">
+                                <div className="section-title service-style--3 text-center">
+                                    <h2 className="title">Latest @ KNH</h2>
+                                    <p>Latest events and services for the all round care of our patients</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="row mt--60 mt_sm--40">
+                            {BlogContent.map((value , i ) => (
+                                <div className="col-lg-4 col-md-6 col-12" key={i}>
+                                    <div className="blog blog-style--1">
+                                        <div className="thumbnail">
+                                            <a  target="_blank" href={value.link}>
+                                                <img className="w-100" src={value.images} alt="Blog Images"/>
+                                            </a>
+                                        </div>
+                                        <div className="content">
+                                            <p className="blogtype">{value.category}</p>
+                                            <h4 className="title"><a target="_blank" href={value.link}>{value.title}</a></h4>
+                                            <div className="blog-btn">
+                                                <a className="rn-btn text-white"  target="_blank" href={value.link}>Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>    
+                    </div>    
+                </div>
+                {/* End Blog Area */}
+
+
                 {/* Start Brand Area */}
                 <div className="rn-brand-area bg_color--5 ptb--30">
                     <div className="container">

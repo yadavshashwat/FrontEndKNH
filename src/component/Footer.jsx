@@ -46,16 +46,20 @@ class Footer extends Component{
                                             <div className="footer-link">
                                                 <h4>How to reach us</h4>
                                                 <div className="knh-address">
-                                                    <p>Address:</p>
+                                                    <b><p>Address:</p></b>
                                                     <p>21, Manu Marg, Alwar, Rajasthan, 301001</p>
-                                                </div>                                            
+                                                </div>              
+                                                <div className="knh-telephone">
+                                                    <b><p>Important Numbers</p></b>
+                                                    <p>Helpline: 9667200628</p>
+                                                    <p>Appointment:  0144-2705403</p>
+                                                    <p>Enquiry:  0144-2705401</p>
+                                                </div>              
                                                 <ul className="ft-link">
-                                                    <li><p>Email:</p><a href="mailto:kamlanursinghome123@gmail.com">kamlanursinghome123@gmail.com</a></li>
+                                                    <li>
+                                                        <b><p>Email:</p></b>
+                                                        <a href="mailto:kamlanursinghome123@gmail.com">kamlanursinghome123@gmail.com</a></li>
                                                 </ul>
-                                                <ul className="ft-link">
-                                                    
-                                                </ul>
-
                                                 <div className="social-share-inner">
                                                     <ul className="social-share social-style--2 d-flex justify-content-start liststyle mt--15">
                                                         {SocialShare.map((val , i) => (
