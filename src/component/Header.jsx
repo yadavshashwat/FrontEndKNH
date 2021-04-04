@@ -65,11 +65,11 @@ class Header extends Component{
                                 <li><HLink to="/#about" >About Us</HLink></li>
                             </ul>
                         </nav>
-                        {/* <div className="header-btn">
-                            <a className="rn-btn" href="/">
+                        <div className="header-btn">
+                            <a className="rn-btn" href="tel:01442705403">
                                 <span>Book Appointment</span>
                             </a>
-                        </div> */}
+                        </div>
                         {/* Start Humberger Menu  */}
                         <div className="humberger-menu d-block d-lg-none pl--20">
                             <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>

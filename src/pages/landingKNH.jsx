@@ -45,7 +45,7 @@ const SlideList = [
         title: 'Our Team.',
         description: 'The team of 10+ dedicated doctors with extensive medical expertise ensures that the best treatment is administered.',
         buttonText: 'Book an Appointment',
-        buttonLink: '/contact'
+        // buttonLink: '/contact'
     },
     {
         textPosition: 'text-left',
@@ -54,7 +54,7 @@ const SlideList = [
         title: 'Our Facility.',
         description: 'With our state of the art infrastructure, we ensure everything under the roof from diagnosis to treatment.',
         buttonText: 'Book an Appointment',
-        buttonLink: '/contact'
+        // buttonLink: '/contact'
     },
     {
         textPosition: 'text-left',
@@ -63,7 +63,7 @@ const SlideList = [
         title: 'Our Care.',
         description: "We understand the critical nature of medical care. Patient's safety is paramount.",
         buttonText: 'Book an Appointment',
-        buttonLink: '/contact'
+        // buttonLink: '/contact'
     }
 ]
 
@@ -97,7 +97,7 @@ class landingKNH extends Component{
                                                     {value.category ? <span>{value.category}</span> : ''}
                                                     {value.title ? <h1 className="title">{value.title}</h1> : ''}
                                                     {value.description ? <p className="description">{value.description}</p> : ''}
-                                                    {/* {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-solid" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''} */}
+                                                    {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-solid" href="tel:01442705403">{value.buttonText}</a></div> : ''}
                                                 </div>
                                             </div>
                                         </div>
