@@ -26,25 +26,29 @@ let TeamContent = [
         img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014402/Doctors/monica_ovo0hi.jpg"
     },
     {
-        title: 'Dr Satveer Singh',
-        designation: 'Radiologist',
-        // details:'',
-        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014402/Doctors/satveer_jq9ptj.jpg"
-    },
-    {
         title: 'Dr Garima Goyal',
         designation: 'Gynaecologist',
         // details:'',
         img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014403/Doctors/garima_t3fwno.jpg"
     },
     {
-        title: 'Dr Manisha Yadav',
-        designation: 'Paediatrist',
+        title: 'Dr Shailabh Gupta',
+        designation: 'Pediatrician - Neonatology',
         // details:'',
-        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014403/Doctors/manisha_ccqka2.jpg"
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1617535101/Doctors/shailabh_hlegbz.jpg"
     },
-
-
+    {
+        title: 'Dr Satveer Singh',
+        designation: 'Radiologist',
+        // details:'',
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1609014402/Doctors/satveer_jq9ptj.jpg"
+    },
+    {
+        title: 'Dr Rishabh Khandelwal',
+        designation: 'Anaesthetist',
+        // details:'',
+        img_src:"https://res.cloudinary.com/alphabetagamma/image/upload/v1617535258/Doctors/rishabh_ggyuqn.jpg"
+    }
 ];
 
 
